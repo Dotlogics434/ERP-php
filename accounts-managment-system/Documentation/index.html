@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documentation | Accounts Management System</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="main_heading hr text-center">“Accounts Management System” Documentation by “IDLBridge”</h3>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="bg_pre">
+      <div class="col-md-4">
+        <div class="prepend-top"><strong>Created: 16/09/2016<br>
+          By: IDLBridge<br>
+          Email:<a href="mailto:tahiriqbal09@gmail.com">tahiriqbal09@gmail.com</a></strong></div>
+      </div>
+      <div class="col-md-8">
+        <p class="prepend-top_2">Thank you for purchasing our accounts management system. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://www.idlbridge.com">here</a>.<br>
+          Thanks so much!</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <h3 class="main_heading hr">Table of Contents</h3>
+    <div class="navi-tabs">
+      <div class="col-md-3">
+        <nav class="navi-tabs__nav">
+          <ul class="verticalnav">
+            <li class="dropdown open"><a href="#tab_inst">Instalation</a></li>
+            <li ><a href="#h_structure">How To Use </a></li>                            
+            <li><a href="#tab1">Items Management</a></li>
+            <li><a href="#tab2">Sale / Purchase</a></li>
+            <li><a href="#tab3">View Sale/Purchase list</a></li>
+            <li><a href="#tab4">Transaction</a></li>
+            <li><a href="#tab5">Quick Sale</a></li>
+            <li><a href="#tab6">Reports</a></li>                            
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-9">
+        <div class="navi-tabs__container">
+        	
+          <div class="navi-tabs__content" id="tab_inst">
+            <h4>Instalation</h4>
+            <p>Follow the steps below to get started with our accounts management system:</p>
+            <div class="file-tree">
+            <ol>
+            <li>Open the Package/accounts management system Folder to find all the package Files</li>
+            <li>You will need to Upload these files to your Web Server using FTP in order to use it on your Website.</li>
+            <li>Make sure you upload the required files/folders listed below:<br>
+              <ul>
+              <br>
+              <br>
+              <li class="is-folder open">Application folder</li>
+              <li class="is-folder open">Css folder</li>
+              <li class="is-folder open">Assets folder</li>
+              <li class="is-folder open">Dist folder</li>
+              <li class="is-folder open">Plugin folder</li>
+              <li class="is-folder open">System folder</li>
+              <li class="is-folder open">.htaccess file</li>
+              <li class="is-folder open">index.php file</li>
+              <li class="is-folder open">Database(Sql File to uploade phpmyadmin)</li>
+ 			  </ul>	
+              <br>
+              <br>
+              <br>
+            </li> 
+            <p> after that go to application/config/database.php and change<br>
+            <code>'hostname' => 'your host'</code>,<br>
+            <code>'username' => 'your server user name</code>',<br>
+            <code>'password' => 'your server password/default password'</code>,<br>
+            <code>'database' => 'your database name/accounts_managment'</code>,
+            </p>
+            <p>
+            	after that go to application/config/config.php<br>
+            	<code>$config['base_url'] = 'http://your url/accounts_managment/';</code>
+            </p>
+            <p>The other files can be used according to your preferences.
+             You're now good to go..! Start adding your data </p>
+             <p>
+             	<strong>Default User, Pass will be admin,admin123</strong>
+             </p>
+            </ol>
+            </div>
+          </div>
+          <div class="navi-tabs__content" id="h_structure">
+            <h4>Accounts</h4>
+            <p>First of all you add accounts of customers ,suppliers and vendors etc. for this purpose go to accounts tab and open add accounts form. for adding an account you'll need to add account type . For this go to add/view accounts type link the form'll be shown to add new or manage account types</p>
+            <img src="images/accounts_type.png" class="img-responsive" alt="Accounts type management">
+            <p>
+            After adding accounts types add accounts. for this go to accounts link and add ,manage your accounts.
+            </p>
+            <img src="images/accounts.jpg" class="img-responsive" alt="Accounts management"></div>
+          </div>
+          <div class="navi-tabs__content" id="tab1">
+            <h4>Items Management</h4>
+            <p> In items management you will need to add items for use.<br>
+            there are two types of items <br>
+            <ul>
+            	<li>Services Items</li>
+                <li>inventories Items</li>
+            </ul>            
+            </p>
+            <h4>Services Items</h4>
+            <p>in services items, items include that heve not any stock like brokri,rent and clerck fee etc.<br>
+            at the time inserting items you will insert ratio of service item and system use this ratio for calculating bill or invice...</p>
+            <h4>Inventories Items</h4>
+            <p>Inventries items are items that have stock like cotton , cotton cake and seed etc.<br>
+            inventories items are three types per bag ,per kg and per mun. in per bag item you will need to add item price and weight per bag . in per kg item you add price per kg. in per mun you add weight of mun and price per mun .</p>
+            <img src="images/items.png" class="img-responsive" alt="Items Management">
+          </div>
+          <div class="navi-tabs__content" id="tab2">
+            <h4>Sale / Purchase Items</h4>
+            <p>
+            For sale go to add sale and for puchase go to add purchase link<br>
+            In purchase items you add bill that you purchase any thing from supplier.<br>
+            first of all you select account bill from and bill to and then add items that will be purchsed and add services on bill at the time of adding services you select service and if you add this servece ratio at the time of adding item system automatically calculate amount of service.<br>
+            here two options for users <br>
+            first : collect serivces amount from supplier. for this you check right check box.<br>
+            second : collect services amount from buyer. for this you check left check box . by checking this checkbox system give service amount to supplier  
+            </p>
+            <img src="images/bill.jpg" class="img-responsive" alt="purchase bill">
+          </div>
+          <div class="navi-tabs__content" id="tab3">
+            <h4>Sale Purchase List</h4>
+            <p>for view puchase list go to view purchase link and for go to view sale list go to view sale list<br>
+            here you can see previous bill or invoice and edit or delete previous bill or invoice.
+            </p>
+            <img src="images/bill_list.jpg" class="img-responsive" alt="purchase bill list">
+          </div>
+          <div class="navi-tabs__content" id="tab4">
+            <h4>Transaction</h4>
+            <p>in transaction you add trancestion that you done with any one <br>
+            here you can add and manage your transections.</p>
+            <img src="images/transaction.jpg" class="img-responsive" alt="transaction">
+          </div>
+          <div class="navi-tabs__content" id="tab5">
+            <h4>Quick Sale</h4>
+            <p>In quick sale you add sale with out adding supplier and customers. only add weight and price of the items and sale it.<br>
+            here only show those items that you check at the time of inserting inventories items .there is a check box show on quick sale if it is checked then item will shown on quick sale page.</p>
+            <img src="images/quick_sale.jpg" class="img-responsive" alt="Quick Sale" style="padding-bottom:30px;">
+            <img src="images/quick_sale_print.jpg" class="img-responsive" alt="Quick Sale">            
+          </div>
+          <div class="navi-tabs__content" id="tab6">
+            <h4>Reports</h4>
+            <p>
+            	Accounts management system have 11 types of reports.<br>
+                1: Sale Report <br>
+                2: Items Report<br>
+                3: Services Report Sale<br>
+                4: Broker Report Sale<br>
+                5: Parta Report<br>
+                6: Daily Sale Report<br>
+                7: Quick Sale Report<br>
+                8: Weight Report Purchae<br>
+                9: Purchase Report <br>
+                10: Broker Report Purchase <br>
+                11: Services Report Purchase<br>
+            </p><h4>Sample of making reports</h4>
+              <img src="images/Report.jpg" class="img-responsive" alt="grid-image">
+          </div>
+          
+          
+		
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+	$(function(){
+		$("a").on('click',function(){
+			$("a").removeClass('active');
+			$(this).addClass('active');
+		})
+	})
+</script>
+<body>
+</body>
+</html>
